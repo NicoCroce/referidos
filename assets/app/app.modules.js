@@ -11,8 +11,13 @@
                 // HOME STATES AND NESTED VIEWS ========================================
                 .state('home', {
                     url: '/home',
-                    templateUrl: '../', // Set HTML
+                    templateUrl: '../templates/home/home.html', // Set HTML
                     controller: '' //Set Controller
+                })
+                .state('step1', {
+                    url: '/step1',
+                    templateUrl: '../templates/step1/step1.html', // Set HTML
+                    controller: 'StepOneCtrl' //Set Controller
                 });
         }]);
 })();

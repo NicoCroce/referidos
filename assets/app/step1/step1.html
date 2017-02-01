@@ -1,0 +1,13 @@
+<section class="step-one">
+    <h2 ng-bind="title"></h2>
+    <form name="formStep1">
+        <div>
+            <h4>Nombres</h4>
+            <input type="text" name="inputName" ng-value="inputValue" required>
+            <span>Completar</span>
+            <span ng-show="formStep1.inputName.$error.required">Completar</span>
+            <code>ver = {{ formStep1.inputName.$error }}</code>
+        </div>
+        <input type="submit" value="Continuar">
+    </form>
+</section>

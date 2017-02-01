@@ -1,7 +1,9 @@
 (function(){
-    'use strict';
+    'use strict'
     angular
         .module('app')
-        .controller('IndexController', ['$scope', function ($scope) {            
-        }]);
+        .controller('IndexCtrl', IndexCtrl)
+    IndexCtrl.inject = ['$scope'];
+
+    function IndexCtrl ($scope){};
 })();

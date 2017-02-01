@@ -150,26 +150,26 @@ function cleanData(){
 }
 
 function connectServer(done) {
-/*	connect.server({
+	connect.server({
 		root: ENVIRONMENT,
 		port: serverPort
-	});*/
-	browserSync.init({
+	});
+	/*browserSync.init({
 		port: serverPort,
 		server: {
 			baseDir: ENVIRONMENT
 		},
 		ui: {
 			port: 2222,
-		},
-		files: ["**/*.js", "**/*.html", "**/*.css"]
-	});
-
-	return done();
-/*
-
+		},*/
+		//files: ["**/*.js", "**/*.html", "**/*.css"]
+	/*});
 
 	return done();*/
+
+
+
+	return done();
 };
 
 function copyData(done) {
